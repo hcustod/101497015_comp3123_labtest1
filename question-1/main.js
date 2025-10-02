@@ -1,9 +1,8 @@
 
-
 function lowerCaseWords(mixedArr) {
     return new Promise((resolve, reject) => {
         if (Array.isArray(mixedArr)) {
-            filteredArr = mixedArr.filter(word => typeof word === 'string').map(word => word.toLowerCase());
+            const filteredArr = mixedArr.filter(word => typeof word === 'string').map(word => word.toLowerCase());
             resolve(filteredArr);
         } else {
             return reject(`It's not an array`);
